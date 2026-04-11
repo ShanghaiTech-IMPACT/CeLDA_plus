@@ -1,0 +1,236 @@
+{
+  "description": "46点关键点名称与中文定义",
+  "num_points": 46,
+  "points": [
+    {
+      "ind": 0,
+      "name": "A",
+      "definition_zh": "Subspinale / A point，上颌前部骨性轮廓的最深凹点。"
+    },
+    {
+      "ind": 1,
+      "name": "ANS",
+      "definition_zh": "Anterior nasal spine，前鼻棘尖端。"
+    },
+    {
+      "ind": 2,
+      "name": "UI",
+      "definition_zh": "上中切牙切缘点（上前牙最前牙冠的切端）。"
+    },
+    {
+      "ind": 3,
+      "name": "UIA",
+      "definition_zh": "上中切牙根尖点。"
+    },
+    {
+      "ind": 4,
+      "name": "Or",
+      "definition_zh": "Orbitale，眶下缘最低点/眶下缘代表点。"
+    },
+    {
+      "ind": 5,
+      "name": "P",
+      "definition_zh": "Porion，左外耳道上缘最高点。"
+    },
+    {
+      "ind": 6,
+      "name": "LI",
+      "definition_zh": "下中切牙切缘点。"
+    },
+    {
+      "ind": 7,
+      "name": "LIA",
+      "definition_zh": "下中切牙根尖点。"
+    },
+    {
+      "ind": 8,
+      "name": "Sn",
+      "definition_zh": "Subnasale，鼻小柱与上唇交界点。"
+    },
+    {
+      "ind": 9,
+      "name": "Pog",
+      "definition_zh": "Pogonion，骨性下巴最前点。"
+    },
+    {
+      "ind": 10,
+      "name": "N",
+      "definition_zh": "Nasion，额鼻缝最前中点。"
+    },
+    {
+      "ind": 11,
+      "name": "S",
+      "definition_zh": "Sella，蝶鞍中心。"
+    },
+    {
+      "ind": 12,
+      "name": "P'",
+      "definition_zh": "Porion，右外耳道上缘最高点。"
+    },
+    {
+      "ind": 13,
+      "name": "Ba",
+      "definition_zh": "Basion，枕骨大孔前缘最下点/斜坡后下缘点。"
+    },
+    {
+      "ind": 14,
+      "name": "Ptm",
+      "definition_zh": "Pterygomaxillary fissure point，翼上颌裂最低轮廓点/裂隙基底点。"
+    },
+    {
+      "ind": 15,
+      "name": "PNS",
+      "definition_zh": "Posterior nasal spine，后鼻棘。"
+    },
+    {
+      "ind": 16,
+      "name": "SPr",
+      "definition_zh": "Superior prosthion / supradentale，上颌齿槽突前下最前点，位于上中切牙釉牙骨质界附近。"
+    },
+    {
+      "ind": 17,
+      "name": "Pt",
+      "definition_zh": "PT point，指翼上颌裂与圆孔区域交界的构造点，为 cephalometry 常用辅助骨性点。"
+    },
+    {
+      "ind": 18,
+      "name": "Id",
+      "definition_zh": "Infradentale，下中切牙间下颌齿槽突最前上点。"
+    },
+    {
+      "ind": 19,
+      "name": "B",
+      "definition_zh": "Supramentale / B point，下颌前部骨性轮廓最深凹点。"
+    },
+    {
+      "ind": 20,
+      "name": "Pog'",
+      "definition_zh": "骨性 Pogonion。"
+    },
+    {
+      "ind": 21,
+      "name": "Me",
+      "definition_zh": "Menton，骨性颏部最低点。"
+    },
+    {
+      "ind": 22,
+      "name": "Gn",
+      "definition_zh": "Gnathion，骨性颏部前下点。"
+    },
+    {
+      "ind": 23,
+      "name": "Go",
+      "definition_zh": "Gonion，下颌角点。"
+    },
+    {
+      "ind": 24,
+      "name": "Ar",
+      "definition_zh": "Articulare，下颌支后缘与颅底外缘交汇点。"
+    },
+    {
+      "ind": 25,
+      "name": "Co",
+      "definition_zh": "Condylion，髁突头后上点。"
+    },
+    {
+      "ind": 26,
+      "name": "R1",
+      "definition_zh": "下颌支辅助点，对应 mandibular ramus anterior edge curve 上的代表点。"
+    },
+    {
+      "ind": 27,
+      "name": "R3",
+      "definition_zh": "下颌切迹（sigmoid notch）最低中央点。"
+    },
+    {
+      "ind": 28,
+      "name": "Ramus Point",
+      "definition_zh": "下颌支后下缘代表点，属于 ramus 轮廓辅助点。"
+    },
+    {
+      "ind": 29,
+      "name": "Pcd",
+      "definition_zh": "posterior condylion / posterior condylar point，属于髁突相关骨性参考点。"
+    },
+    {
+      "ind": 30,
+      "name": "U6",
+      "definition_zh": "上第一恒磨牙近中颊尖点。"
+    },
+    {
+      "ind": 31,
+      "name": "L6",
+      "definition_zh": "下第一恒磨牙近中颊尖点。"
+    },
+    {
+      "ind": 32,
+      "name": "G'",
+      "definition_zh": "Soft-tissue glabella，前额软组织最前点。"
+    },
+    {
+      "ind": 33,
+      "name": "lower",
+      "definition_zh": "鼻soft-tissue auxiliary）。"
+    },
+    {
+      "ind": 34,
+      "name": "Prn",
+      "definition_zh": "Pronasale，鼻尖最前点。"
+    },
+    {
+      "ind": 35,
+      "name": "Cm",
+      "definition_zh": "Columella，鼻小柱前下点。"
+    },
+    {
+      "ind": 36,
+      "name": "A'",
+      "definition_zh": "Soft-tissue A point / soft-tissue subspinale，骨性 A 点对应的软组织点。"
+    },
+    {
+      "ind": 37,
+      "name": "Ls",
+      "definition_zh": "Labrale superius，上唇红唇缘最前点。"
+    },
+    {
+      "ind": 38,
+      "name": "Li",
+      "definition_zh": "Labrale inferius，下唇红唇缘最前点。"
+    },
+    {
+      "ind": 39,
+      "name": "Me'",
+      "definition_zh": "Soft-tissue menton，软组织颏部最低点。"
+    },
+    {
+      "ind": 40,
+      "name": "Gn'",
+      "definition_zh": "Soft-tissue gnathion，软组织颏部前下点。"
+    },
+    {
+      "ind": 41,
+      "name": "UpperLip2",
+      "definition_zh": "上唇轮廓辅助点（soft-tissue auxiliary）。"
+    },
+    {
+      "ind": 42,
+      "name": "LowerLip1",
+      "definition_zh": "下唇轮廓辅助点（soft-tissue auxiliary）。"
+    },
+    {
+      "ind": 43,
+      "name": "JawPoint-9",
+      "definition_zh": "下颌缘/颏下软组织点（jawline soft-tissue auxiliary）。"
+    },
+    {
+      "ind": 44,
+      "name": "bite pt1",
+      "definition_zh": "第一前磨牙辅助点（bite / occlusal auxiliary）。"
+    },
+    {
+      "ind": 45,
+      "name": "bite pt2",
+      "definition_zh": "恒磨牙辅助点（bite / occlusal auxiliary）。"
+    }
+  ]
+}
