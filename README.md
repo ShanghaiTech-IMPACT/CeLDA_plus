@@ -37,13 +37,15 @@
 
 > **CeLDA+: Prototypical Learning for Age-Robust Cephalometric Landmark Detection**
 >
-> [Han Wu](https://hanwu.website/)<sup>1*</sup>, [Wei Jia](https://github.com/WeiJiaFiona)<sup>1*</sup>, Lanzhuju Mei<sup>1</sup>, Tong Yang<sup>2</sup>, Haizhen Li<sup>3✉</sup>, [Chong Wang](https://cwangrun.github.io/)<sup>4,5✉</sup>, [Zhiming Cui](https://shanghaitech-impact.github.io/)<sup>1✉</sup> <br/>
+> [Han Wu](https://hanwu.website/)<sup>1*</sup>, [Wei Jia](https://github.com/WeiJiaFiona)<sup>1*</sup>, Lanzhuju Mei<sup>1</sup>, Tong Yang<sup>2</sup>, Min Zhu<sup>3</sup>, Haizhen Li<sup>3✉</sup>, [Chong Wang](https://cwangrun.github.io/)<sup>4,5✉</sup>, [Dinggang Shen](https://idea.bme.shanghaitech.edu.cn/)<sup>1,6,7✉</sup>, [Zhiming Cui](https://shanghaitech-impact.github.io/)<sup>1✉</sup> <br/>
 > <sup>1</sup> School of Biomedical Engineering & State Key Laboratory of Advanced Medical Materials and Devices, ShanghaiTech University, Shanghai, China <br/>
 > <sup>2</sup> Shanghai Linkedcare Information Technology Co., Ltd., Shanghai, China <br/>
 > <sup>3</sup> Shanghai Ninth People Hospital, School of Medicine, Shanghai Jiao Tong University, Shanghai, China <br/>
 > <sup>4</sup> Center for Artificial Intelligence in Medicine and Imaging, Stanford University, Palo Alto, CA, USA <br/>
 > <sup>5</sup> Department of Radiology, Stanford University, Stanford, CA, USA <br/>
-> <sup>*</sup> Equal contribution. ✉ Corresponding authors: [Haizhen Li](mailto:lihaizhen_dent@163.com), [Chong Wang](mailto:chongwa@stanford.edu), [Zhiming Cui](mailto:cuizhm@shanghaitech.edu.cn).
+> <sup>6</sup> Shanghai United Imaging Intelligence Co. Ltd., Shanghai, China <br/>
+> <sup>7</sup> Shanghai Clinical Research and Trial Center, Shanghai, China <br/>
+> <sup>*</sup> These authors contributed equally to this paper. ✉ Corresponding authors: [Haizhen Li](mailto:lihaizhen_dent@163.com), [Chong Wang](mailto:chongwa@stanford.edu), [Dinggang Shen](mailto:Dinggang.Shen@gmail.com), [Zhiming Cui](mailto:cuizhm@shanghaitech.edu.cn).
 
 
 ## 📚 Dataset
