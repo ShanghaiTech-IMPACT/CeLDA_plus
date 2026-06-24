@@ -7,7 +7,7 @@
   <a href="https://github.com/WeiJiaFiona">Wei Jia</a><sup>1,*</sup>,
   Lanzhuju Mei<sup>1</sup>,
   Tong Yang<sup>2</sup>,
-  Min Zhu<sup>3</sup>,
+  Min Zhu<sup>3</sup><br/>
   Haizhen Li<sup>3,†</sup>,
   <a href="https://cwangrun.github.io/">Chong Wang</a><sup>4,5,†</sup>,
   <a href="https://idea.bme.shanghaitech.edu.cn/">Dinggang Shen</a><sup>1,6,7,†</sup>,
@@ -15,11 +15,11 @@
 </p>
 
 <p align="center">
-  <sup>1</sup> ShanghaiTech University &nbsp;·&nbsp;
-  <sup>2</sup> Shanghai Linkedcare Information Technology &nbsp;·&nbsp;
-  <sup>3</sup> Shanghai Ninth People Hospital, SJTU &nbsp;·&nbsp;
-  <sup>4,5</sup> Stanford University &nbsp;·&nbsp;
-  <sup>6</sup> Shanghai United Imaging Intelligence &nbsp;·&nbsp;
+  <sup>1</sup> ShanghaiTech University<br/>
+  <sup>2</sup> Shanghai Linkedcare Information Technology<br/>
+  <sup>3</sup> Shanghai Ninth People Hospital, SJTU<br/>
+  <sup>4,5</sup> Stanford University<br/>
+  <sup>6</sup> Shanghai United Imaging Intelligence<br/>
   <sup>7</sup> Shanghai Clinical Research and Trial Center
 </p>
 
