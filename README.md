@@ -26,9 +26,9 @@
 ## 🚧 TODO
 
 - [x] Repository creation & initial code commit
+- [x] Training / evaluation code release
 - [ ] Dataset page online
 - [ ] Dataset release
-- [ ] Training / evaluation code release
 - [ ] Paper and project page release
 
 
@@ -81,4 +81,51 @@ data/CephaAdoAdu{46,201}
 
 ## 💻 Getting Started
 
-Code coming soon.
+### Installation
+
+```bash
+git clone https://github.com/ShanghaiTech-IMPACT/CeLDA_plus.git
+cd CeLDA_plus
+conda create -n celdaplus python=3.8 -y
+conda activate celdaplus
+pip install -r requirements.txt
+```
+
+### Data
+
+Organize the dataset as described in [Data Organization](#data-organization) above (place `CephaAdoAdu46/` and/or `CephaAdoAdu201/` under `data/`). Landmark definitions are provided in [`data/46pts_definition.json`](data/46pts_definition.json) and [`data/201pts_definition.json`](data/201pts_definition.json).
+
+### Training
+
+```bash
+bash code/scripts/run_train.sh
+```
+
+Options can be set via environment variables (or by editing the script / calling `code/train.py` directly, see `--help`): `DATA_PATH`, `SAVE_PATH`, `EXP_NAME`, `GPU_ID`.
+
+### Testing / Inference
+
+```bash
+RUN_DIR=<your_training_output_dir> bash code/scripts/run_test.sh
+```
+
+### Downstream: skeletal classification & cephalometric tracing
+
+```bash
+RUN_DIR=<your_training_output_dir> bash code/scripts/run_downstream.sh
+```
+
+This evaluates skeletal classification and the contour-level **cephalometric tracing analysis**; the landmark-to-contour mapping is defined in [`code/utils/line_index.py`](code/utils/line_index.py) and the contour-level ASD/HD computation in [`code/downstream_task.py`](code/downstream_task.py).
+
+### Repository Structure
+
+```text
+code/
+├── networks/           # CeLDA+ model (CeLDA_Plus.py); Prototype Relation Mining (Masked_Modeling.py)
+├── dataloaders/        # landmark dataset loading
+├── utils/              # geometry, losses, soft-argmax, line/contour indexing, helpers
+├── scripts/            # run_train.sh / run_test.sh / run_downstream.sh
+├── train.py            # training entry point
+├── test.py             # inference / evaluation entry point
+└── downstream_task.py  # skeletal classification + cephalometric tracing (ASD/HD) evaluation
+```

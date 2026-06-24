@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Training artifacts / checkpoints
+workdir/
+runs/
+*.pth
+*.pt
+*.ckpt
+events.out.tfevents.*
+
+# Released separately (upon acceptance) — keep only the *_definition.json files
+data/CephaAdoAdu46/
+data/CephaAdoAdu201/
+
+# OS / editor
+.DS_Store
+*.swp
