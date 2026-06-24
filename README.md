@@ -15,12 +15,13 @@
 </p>
 
 <p align="center">
-  <sup>1</sup> ShanghaiTech University<br/>
-  <sup>2</sup> Shanghai Linkedcare Information Technology<br/>
-  <sup>3</sup> Shanghai Ninth People Hospital, SJTU<br/>
-  <sup>4,5</sup> Stanford University<br/>
-  <sup>6</sup> Shanghai United Imaging Intelligence<br/>
-  <sup>7</sup> Shanghai Clinical Research and Trial Center
+  <sup>1</sup> School of Biomedical Engineering &amp; State Key Laboratory of Advanced Medical Materials and Devices, ShanghaiTech University, Shanghai, China<br/>
+  <sup>2</sup> Shanghai Linkedcare Information Technology Co., Ltd., Shanghai, China<br/>
+  <sup>3</sup> Shanghai Ninth People Hospital, School of Medicine, Shanghai Jiao Tong University, Shanghai, China<br/>
+  <sup>4</sup> Center for Artificial Intelligence in Medicine and Imaging, Stanford University, Palo Alto, CA, USA<br/>
+  <sup>5</sup> Department of Radiology, Stanford University, Stanford, CA, USA<br/>
+  <sup>6</sup> Shanghai United Imaging Intelligence Co. Ltd., Shanghai, China<br/>
+  <sup>7</sup> Shanghai Clinical Research and Trial Center, Shanghai, China
 </p>
 
 <p align="center">
@@ -35,12 +36,12 @@
 
 ## Overview
 
-**CeLDA+** (**Ce**phalometric **L**andmark **D**etection across **A**ges) is a **prototypical-learning** framework for **age-robust** cephalometric landmark detection. It reformulates landmark detection as **semantic matching** in a high-dimensional feature space — mapping morphologically diverse instances (e.g. unerupted teeth, mixed dentition) to compact regions around learnable prototypes — so a single model generalizes across adolescents and adults without any age-specific design. Two modules strengthen the prototypes:
+**CeLDA+** (**Ce**phalometric **L**andmark **D**etection across **A**ges) is a **prototypical-learning** framework for **age-robust** cephalometric landmark detection. It reformulates landmark detection as **semantic matching** in a high-dimensional feature space, mapping morphologically diverse instances (e.g. unerupted teeth, mixed dentition) to compact regions around learnable prototypes, so a single model generalizes across adolescents and adults without any age-specific design. Two modules strengthen the prototypes:
 
-- **Prototype Geometry Regularization** — enforces geometric consistency among landmarks.
-- **Prototype Relation Mining** — captures semantic dependencies between anatomically related structures.
+- **Prototype Geometry Regularization**: enforces geometric consistency among landmarks.
+- **Prototype Relation Mining**: captures semantic dependencies between anatomically related structures.
 
-It supports the **46-** and **201-point** landmark sets and drives two downstream clinical analyses — **skeletal classification** and **cephalometric tracing** — alongside the released **CephaAdoAdu46/201** benchmark.
+It supports the **46-** and **201-point** landmark sets and drives two downstream clinical analyses, **skeletal classification** and **cephalometric tracing**, alongside the released **CephaAdoAdu46/201** benchmark.
 
 <details>
 <summary><b>Abstract</b></summary>
@@ -68,7 +69,7 @@ code/
   <img width="100%" alt="Landmark distribution" src="./figs/landmark_distribution1.png"/>
 </p>
 
-Our **CephaAdoAdu46/201** dataset comprises **2,950** multi-center lateral cephalograms of adolescent and adult patients, annotated with the **46-** and **201-point** protocols — the largest cephalometric landmark benchmark to date. It is available for **research purposes only**.
+Our **CephaAdoAdu46/201** dataset comprises **2,950** multi-center lateral cephalograms of adolescent and adult patients, annotated with the **46-** and **201-point** protocols, representing the largest cephalometric landmark benchmark to date. It is available for **research purposes only**.
 
 ### Access
 
@@ -107,7 +108,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-The pipeline runs in three stages — **Training → Evaluation → Downstream Task** — driven by the scripts in [`code/scripts/`](code/scripts), each consuming the previous stage's output. Override defaults via environment variables (or run any entry point with `--help` for the full flag list):
+The pipeline runs in three stages: **Training, Evaluation, and Downstream Task**, driven by the scripts in [`code/scripts/`](code/scripts), each consuming the previous stage's output. Override defaults via environment variables (or run any entry point with `--help` for the full flag list):
 
 | Variable | Stage | Default | Meaning |
 |:---|:---|:---|:---|
@@ -138,9 +139,9 @@ RUN_DIR=<your_training_output_dir> bash code/scripts/run_test.sh
 
 Loads the `best_ema` checkpoint from `RUN_DIR` and decodes coordinates with Soft-Argmax, reporting per-landmark **MRE** (Mean Radial Error) and **SDR@1/2/3/4 mm** (Success Detection Rate) plus the overall mean error and inference efficiency. Pass `--eval_mode {adult,adolescent}` to `code/test.py` for the **age-robust** breakdown (default `mix`). Outputs are written to `RUN_DIR/eval_test_<checkpoint>_<eval_mode>/`:
 
-- `metrics_table.txt` — per-landmark MRE / SDR table
-- `test_prediction_results.json` — predictions per image (input to the downstream task)
-- `efficiency_statistics.txt` — inference speed
+- `metrics_table.txt`: per-landmark MRE / SDR table
+- `test_prediction_results.json`: predictions per image (input to the downstream task)
+- `efficiency_statistics.txt`: inference speed
 
 ### Downstream Task
 
@@ -150,8 +151,8 @@ RUN_DIR=<your_training_output_dir> bash code/scripts/run_downstream.sh
 
 Consumes the evaluation's `test_prediction_results.json` (so `CHECKPOINT` / `EVAL_MODE` must match the eval run) and runs two clinical analyses:
 
-1. **Skeletal classification** — derives standard cephalometric measurements from the predicted landmarks and reports the **Skeletal Classification Rate (SCR)**, overall and per class.
-2. **Cephalometric tracing** — reconstructs anatomical contours and measures the contour-level **ASD** (Average Surface Distance) and **HD** (Hausdorff Distance) against the ground-truth tracing.
+1. **Skeletal classification**: derives standard cephalometric measurements from the predicted landmarks and reports the **Skeletal Classification Rate (SCR)**, overall and per class.
+2. **Cephalometric tracing**: reconstructs anatomical contours and measures the contour-level **ASD** (Average Surface Distance) and **HD** (Hausdorff Distance) against the ground-truth tracing.
 
 The landmark-to-contour mapping lives in [`code/utils/line_index.py`](code/utils/line_index.py); results (`bone_classification_table_*.txt`, `line_metrics.json`) are saved under `RUN_DIR/.../downstream_statistics/`.
 
