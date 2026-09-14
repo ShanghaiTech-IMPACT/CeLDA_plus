@@ -2,6 +2,8 @@
 
 <p align="center"><i>Official implementation &amp; the CephaAdoAdu46/201 benchmark</i></p>
 
+> **Update:** Our paper has been officially accepted by **Medical Image Analysis (MedIA)**! We are completing the final anonymization of the **CephaAdoAdu46/201** dataset and will make it publicly available as soon as this process is complete.
+
 <p align="center">
   <a href="https://hanwu.website/">Han Wu</a><sup>1,*</sup>,
   <a href="https://github.com/WeiJiaFiona">Wei Jia</a><sup>1,*</sup>,
@@ -41,7 +43,7 @@
 - **Prototype Geometry Regularization**: enforces geometric consistency among landmarks.
 - **Prototype Relation Mining**: captures semantic dependencies between anatomically related structures.
 
-It supports the **46-** and **201-point** landmark sets and drives two downstream clinical analyses, **skeletal classification** and **cephalometric tracing**, alongside the released **CephaAdoAdu46/201** benchmark.
+It supports the **46-** and **201-point** landmark sets and drives two downstream clinical analyses, **skeletal classification** and **cephalometric tracing**, alongside the **CephaAdoAdu46/201** benchmark introduced in this work.
 
 <details>
 <summary><b>Abstract</b></summary>
@@ -69,9 +71,11 @@ code/
   <img width="100%" alt="Landmark distribution" src="./figs/landmark_distribution1.png"/>
 </p>
 
-Our **CephaAdoAdu46/201** dataset comprises **2,950** multi-center lateral cephalograms of adolescent and adult patients, annotated with the **46-** and **201-point** protocols, representing the largest cephalometric landmark benchmark to date. It is available for **research purposes only**.
+Our **CephaAdoAdu46/201** dataset comprises **2,950** multi-center lateral cephalograms of adolescent and adult patients, annotated with the **46-** and **201-point** protocols, representing the largest cephalometric landmark benchmark to date. It will be made available for **research purposes only**.
 
 ### Access
+
+**Release status:** Final data anonymization is in progress. The dataset will be made publicly available as soon as anonymization is complete, and we will update this README with the release announcement. The access procedure below will apply after release:
 
 1. Visit the [IMPACT Lab dataset page](https://shanghaitech-impact.github.io/dataset/).
 2. Download and complete the [application form](https://shanghaitech-impact.github.io/assets/dataset_application.pdf).
@@ -160,7 +164,8 @@ The landmark-to-contour mapping lives in [`code/utils/line_index.py`](code/utils
 
 - [x] Repository creation & initial code commit
 - [x] Training / evaluation code release
-- [ ] Dataset release
+- [x] Paper officially accepted by Medical Image Analysis (MedIA)
+- [ ] Dataset release (final anonymization in progress; public release immediately upon completion)
 - [ ] Paper and project page release
 
 ## Contact
