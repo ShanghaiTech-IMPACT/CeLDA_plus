@@ -2,7 +2,12 @@
 
 <p align="center"><i>Official implementation &amp; the CephaAdoAdu46/201 benchmark</i></p>
 
-> **Update:** Our paper has been officially accepted by **Medical Image Analysis (MedIA)**! We are completing the final anonymization of the **CephaAdoAdu46/201** dataset and will make it publicly available as soon as this process is complete.
+<p align="center">
+  <a href="https://www.sciencedirect.com/science/article/pii/S1361841526003993">Paper</a> &middot;
+  <a href="https://shanghaitech-impact.github.io/dataset/#celda-plus">Dataset &amp; Access</a>
+</p>
+
+> **Update:** Our paper is now available online in **Medical Image Analysis (MedIA)**. **CephaAdoAdu46** and **CephaAdoAdu201** have been released and are available for **non-commercial academic research by application**. See [Dataset access](#access) for the application procedure.
 
 <p align="center">
   <a href="https://hanwu.website/">Han Wu</a><sup>1,*</sup>,
@@ -71,16 +76,16 @@ code/
   <img width="100%" alt="Landmark distribution" src="./figs/landmark_distribution1.png"/>
 </p>
 
-Our **CephaAdoAdu46/201** dataset comprises **2,950** multi-center lateral cephalograms of adolescent and adult patients, annotated with the **46-** and **201-point** protocols, representing the largest cephalometric landmark benchmark to date. It will be made available for **research purposes only**.
+The **CephaAdoAdu46** and **CephaAdoAdu201** benchmarks contain a combined total of **2,950** multi-center lateral cephalograms from adolescent and adult patients. They provide **46** and **201** annotated landmarks per image, respectively. Both datasets have been released for **non-commercial academic research by application**.
 
 ### Access
 
-**Release status:** Final data anonymization is in progress. The dataset will be made publicly available as soon as anonymization is complete, and we will update this README with the release announcement. The access procedure below will apply after release:
+**Release status: Released — access applications are open.** The datasets are available for **non-commercial academic research only**. To request access:
 
-1. Visit the [IMPACT Lab dataset page](https://shanghaitech-impact.github.io/dataset/).
+1. Visit the [CephaAdoAdu46/201 dataset page](https://shanghaitech-impact.github.io/dataset/#celda-plus).
 2. Download and complete the [application form](https://shanghaitech-impact.github.io/assets/dataset_application.pdf).
 3. Send the **signed electronic copy** to [Han Wu](mailto:wuhan2022@shanghaitech.edu.cn) and [Dr. Zhiming Cui](mailto:cuizhm@shanghaitech.edu.cn), and **copy (CC) your advisor** as required in Section 5 of the form.
-4. Access credentials (download link and password) will be provided once we receive the form.
+4. Access credentials (download link and password) will be provided after your application has been reviewed and approved.
 
 ### Data Organization
 
@@ -95,10 +100,10 @@ data/CephaAdoAdu{46,201}
 
 ### Landmark Definitions
 
-| Landmark Set | Definition File |
-|:---:|:---:|
-| 46 points | [`data/46pts_definition.json`](data/46pts_definition.json) |
-| 201 points | [`data/201pts_definition.json`](data/201pts_definition.json) |
+| Dataset | Landmarks per Image | Definition File |
+|:---:|:---:|:---:|
+| CephaAdoAdu46 | 46 | [`data/46pts_definition.json`](data/46pts_definition.json) |
+| CephaAdoAdu201 | 201 | [`data/201pts_definition.json`](data/201pts_definition.json) |
 
 ## Installation
 
@@ -164,9 +169,25 @@ The landmark-to-contour mapping lives in [`code/utils/line_index.py`](code/utils
 
 - [x] Repository creation & initial code commit
 - [x] Training / evaluation code release
-- [x] Paper officially accepted by Medical Image Analysis (MedIA)
-- [ ] Dataset release (final anonymization in progress; public release immediately upon completion)
-- [ ] Paper and project page release
+- [x] Paper available online in Medical Image Analysis (MedIA)
+- [x] CephaAdoAdu46/201 dataset release for non-commercial academic research by application
+- [x] Dataset access page and application form published
+
+## Citation
+
+If you use CeLDA+ or the CephaAdoAdu46/201 datasets, please cite:
+
+```bibtex
+@article{wu2026celdaplus,
+title={CeLDA+: Prototypical learning for age-robust cephalometric landmark detection},
+author={Wu, Han and Jia, Wei and Mei, Lanzhuju and Yang, Tong and Zhu, Min and Li, Haizhen and Wang, Chong and Shen, Dinggang and Cui, Zhiming},
+journal={Medical Image Analysis},
+pages={104330},
+year={2026},
+doi={10.1016/j.media.2026.104330},
+url={https://www.sciencedirect.com/science/article/pii/S1361841526003993}
+}
+```
 
 ## Contact
 
